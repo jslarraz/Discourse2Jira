@@ -14,6 +14,7 @@ packages = ["dsc2jira.py"]
 name = "Discourse2Jira"
 version = "0.1"
 dependencies = [
+    "dsctriage @ git+https://github.com/lvoytek/discourse-triage@1.6.1",
     "jira==3.8.0",
     "dsctriage @ git+https://github.com/lvoytek/discourse-triage@1.6.1",
 ]
