@@ -21,7 +21,8 @@ Included is code from lvoytek's [dsctriage](https://github.com/lvoytek/discourse
     $ cd Discourse2Jira
     $ python3 -m venv env
     $ . env/bin/activate
-    $ pip3 install jira
+    $ pip3 install jira==3.8.0
+    $ pip3 install git+https://github.com/lvoytek/discourse-triage@1.6.1
 ```
 3. Create a config file
 ```
