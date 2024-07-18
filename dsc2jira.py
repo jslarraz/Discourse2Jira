@@ -177,7 +177,7 @@ def main(conf, start_date):
         with open(conf.database, "w") as json_file:
             json.dump(database_list, json_file)
 
-if __name__ == "__main__":
+def main_cli():
     parser = argparse.ArgumentParser(prog='ForumSync', description='Check that discourse topics have a matching Jira card.')
     parser.add_argument('-n', '--dry-run', dest='dryrun', help='Dry run. Do not perform any jira ticket creation or database writes', action='store_true')
     parser.add_argument('-i', '--init-db', dest='initdb', help='Create database records for fetched topics, but do not create Jira entries', action='store_true')
@@ -229,3 +229,6 @@ if __name__ == "__main__":
 
     main(conf, start_date)
 
+
+if __name__ == "__main__":
+    main_cli()

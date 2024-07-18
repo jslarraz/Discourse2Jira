@@ -17,3 +17,6 @@ dependencies = [
     "jira==3.8.0",
 ]
 requires-python = ">=3.8"
+
+[project.scripts]
+dsc2jira = "dsc2jira:main_cli"
